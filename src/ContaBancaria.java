@@ -6,6 +6,10 @@ public class ContaBancaria {
 	protected String cpfCliente;
 	protected double saldo;
 	
+	public ContaBancaria() {
+		
+	}
+	
 	public ContaBancaria(String nomeCliente, String endCliente, String
 			cpfCliente) {
 			super();
