@@ -29,4 +29,24 @@ public class ContaBancaria {
 	public double getSaldo() {
 		return saldo;
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((cpfCliente == null) ? 0 : cpfCliente.hashCode());
+		return result;
+	}
+
+	public boolean equals(ContaPoupanca obj) {
+		if(obj instanceof ContaPoupanca) {
+			ContaPoupanca conta = (ContaPoupanca) obj;
+			return conta.cpfCliente.equals(endCliente);
+		} else {
+			return false;
+		}
+	
+	}
+	
+	
 }

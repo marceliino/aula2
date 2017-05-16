@@ -22,5 +22,18 @@ public class Main {
 		System.out.println(ClassificacaoClientes.MEDIO.isCompatible(c1));
 		System.out.println(ClassificacaoClientes.POTENCIAL.isCompatible(c1));
 		
+		ContaPoupanca cp1 = new ContaPoupanca();
+		ContaPoupanca cp2 = new ContaPoupanca();
+		ContaBancaria cb = new ContaBancaria();
+		//System.out.println(cp1.equals(cp2));
+		//System.out.println(cp1.equals(cb));
+		
+		StringBuilder sb = new StringBuilder();
+		String s = "a";
+		s = "b";
+		s = "c";
+		System.out.println(s);
+		
+		
 	}
 }

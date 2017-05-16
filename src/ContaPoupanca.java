@@ -1,6 +1,10 @@
 
 public class ContaPoupanca extends ContaBancaria {
 	
+	public ContaPoupanca() {
+		
+	}
+	
 	public ContaPoupanca(String nomeCliente, String endCliente, String cpfCliente) {
 		super(nomeCliente, endCliente, cpfCliente);
 	}
@@ -11,6 +15,8 @@ public class ContaPoupanca extends ContaBancaria {
 	public void saque(double valor) {
 		super.saque(valor);
 	}
+	
+	
 	
 
 }
