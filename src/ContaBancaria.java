@@ -1,3 +1,4 @@
+import java.util.Calendar;
 
 public class ContaBancaria {
 	
@@ -5,6 +6,8 @@ public class ContaBancaria {
 	protected String endCliente;
 	protected String cpfCliente;
 	protected double saldo;
+	protected Calendar dataNascimento;
+	protected Calendar dataConta;
 	
 	public ContaBancaria() {
 		
@@ -18,7 +21,7 @@ public class ContaBancaria {
 			this.cpfCliente = cpfCliente;
 			}
 	
-	public void saque(double valor) {
+	public void saque(double valor) throws Exception {
 		saldo += valor;
 	}
 	

@@ -1,6 +1,8 @@
 
 public class ContaPoupanca extends ContaBancaria {
 	
+	private double saldo = 100.0;
+	
 	public ContaPoupanca() {
 		
 	}
@@ -12,9 +14,17 @@ public class ContaPoupanca extends ContaBancaria {
 	private int diaAniversario;
 	
 	@Override
-	public void saque(double valor) {
-		super.saque(valor);
+	public void saque(double valor) throws Exception {
+		
+		
+		
+		/*if(valor > saldo) {
+			throw new Exception("Saldo Insuficiente");
+		}
+		super.saque(valor);*/
 	}
+	
+	
 	
 	
 	

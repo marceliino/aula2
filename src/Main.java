@@ -34,6 +34,13 @@ public class Main {
 		s = "c";
 		System.out.println(s);
 		
+		ContaPoupanca contaPoupanca = new ContaPoupanca();
+		try {
+			contaPoupanca.saque(500d);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
 		
 	}
 }
